@@ -15,11 +15,14 @@ body {
 }
 /* Universal Style End */
 
+/* Header Style Start */
+
 #top-banner {
-  height: 652px;
+  max-height: 652px;
   background-image: url("../assets/Hero-bg.png");
 }
 #top-banner-text {
+  padding-bottom: 44px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,14 +36,133 @@ body {
   height: 240px;
   width: 240px;
 }
-#top-banner-text > p {
-  /* width: 395px; */
+#top-banner-text > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
 }
-button {
+#top-banner-text > button {
   cursor: pointer;
   padding: 21px 24px;
   background-color: black;
   color: whitesmoke;
   border-radius: 24px;
+  border: 3px solid transparent;
+}
+#top-banner-text > button:hover {
+  background-color: white;
+  color: black;
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  border: 3px solid black;
+  font-weight: 700;
+}
+/* Header Style End */
+
+/* Web Development Section Start */
+#web-development {
+  background-color: rgba(13, 19, 33, 0.02);
+  /* padding: 0 150px; */
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+#web-development--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 100px 100px 50px 100px;
+}
+.web-development--card {
+  display: flex;
+  background-color: linier-gradient(rgb(255, 255, 255) rgba(255, 255, 255, 0));
+  background-color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  padding: 48px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.web-development--card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.btn-learn-more {
+  padding: 12px 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-learn-more:hover {
+  background-color: black;
+  color: white;
   border: none;
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+}
+/* Web Development Section End */
+
+/* Inspiration Section Start */
+#inspiration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 24px;
+}
+#inspiration > p {
+  max-width: 750px;
+}
+/* Inspiration Section End */
+
+#target-text {
+  max-width: 850px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#target-cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+#target-cards > div > button {
+  border: none;
+  text-decoration: underline;
+}
+#target-cards > div > img {
+  width: 36px;
+  height: 36px;
+}
+.single-card1 {
+  width: 364px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(255, 76, 30, 0.05);
+}
+
+.single-card2 {
+  width: 364px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(0, 76, 232, 0.05);
+}
+
+.single-card3 {
+  width: 364px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(255, 223, 0, 0.05);
 }
